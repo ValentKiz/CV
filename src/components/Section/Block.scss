@@ -1,0 +1,94 @@
+.block {
+	width: 33%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px;
+	flex: 1 0 19%;
+	background: #2E2E48;
+
+	&__header {
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__left,
+	&__right {
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		position: relative;
+	}
+
+	&__company {
+		margin-left: 16px;
+	}
+
+	&__img {
+		position: absolute;
+		left: 0;
+		width: 35px;
+		height: 35px;
+	}
+
+	&__role {
+		color: #ACB1C3;
+		font-size: 14px;
+	}
+
+	&__address {
+		display: flex;
+		align-items: center;
+		color: #ACB1C3;
+		font-weight: 400;
+		font-size: 14px;
+		margin-top: 4px;
+
+		svg {
+			margin-right: 10px;
+			// width: 13px;
+			height: 14px;
+		}
+	}
+
+	&__name {
+		font-weight: 500;
+		font-size: 16px;
+	}
+
+	&__descr {
+		margin-top: 10px;
+		font-weight: 700;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	&__time {
+		margin-top: 1px;
+		font-weight: 400;
+		font-size: 14px;
+		color: #ACB1C3;
+
+		&.active {
+			padding: 5px 8px;
+			background: #5531A7;
+			border-radius: 5px;
+		}
+	}
+
+	&__accordion {
+		margin-top: 8px;
+		width: 100%;
+		border-top: 1px solid #232339;
+		padding: 7px 0;
+	}
+}

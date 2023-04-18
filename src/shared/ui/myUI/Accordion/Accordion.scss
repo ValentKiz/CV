@@ -1,0 +1,15 @@
+.accordion {
+	overflow: hidden;
+	transition: all 1s ease-out;
+	max-height: 0;
+
+	&[aria-expanded="true"] {
+		max-height: 150px;
+		;
+	}
+
+	&__button {
+		cursor: pointer;
+		width: 100%;
+	}
+}

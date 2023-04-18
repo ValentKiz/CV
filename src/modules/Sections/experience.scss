@@ -1,0 +1,42 @@
+.experience {
+	&__block {
+		cursor: pointer;
+		width: 100%;
+		padding-bottom: 0;
+
+		&:hover {
+			background: #5531A7;
+			transition: 500ms all;
+
+			& .active {
+				background: #2E2E48;
+				color: #E2E6EE;
+
+			}
+		}
+	}
+
+	&__img {
+		display: block;
+		position: relative;
+		width: 50px;
+		height: 50px;
+	}
+
+	&__time {
+		color: #EFE2F9;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		list-style: disc inside;
+		padding: 0 32px;
+		flex-wrap: wrap;
+
+		&-item {
+			text-align: left;
+			flex: 0 0 35%;
+		}
+	}
+}

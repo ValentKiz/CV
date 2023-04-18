@@ -1,0 +1,220 @@
+@media (min-width: 1200px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 1100px) {
+	.main {
+		margin-left: 15px;
+	}
+
+	.skills {
+		&__block {
+			font-size: 14px;
+		}
+
+		&__list {
+			list-style-type: none;
+			;
+		}
+	}
+
+	.experience {
+		&__list {
+			&[aria-expanded="true"] {
+				max-height: 200px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.main {
+		margin-left: 0;
+	}
+
+	.skills {
+		&__react {
+			font-size: 18px;
+			line-height: 1;
+		}
+
+		&__logo {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	.experience {
+		&__list {
+			padding: 0 15px;
+
+			&-item {
+				flex: 0 0 100%;
+			}
+
+			&[aria-expanded="true"] {
+				max-height: 300px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.main {
+		padding: 32px;
+	}
+
+	#root {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.sidebar {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 24px;
+
+		&__photo {
+			width: 100px;
+		}
+
+		&__header {
+			width: 100%;
+		}
+
+		& > .divider {
+			display: none;
+		}
+	}
+
+	.list {
+		width: 100%;
+		margin-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		&__title {
+			text-align: center;
+			flex: 1 0 100%;
+		}
+
+		&__item {
+			margin-left: 15px;
+			flex-basis: 40%;
+		}
+	}
+
+	.block {
+		flex: 1 1 40%;
+	}
+
+	.skills {
+		&__grid {
+			display: grid;
+			flex-wrap: wrap;
+			// grid-template-areas: none;
+			// grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: repeat(5, 1fr);
+			grid-template-areas:
+				"first first first first second second second second second second second second"
+				"third third third third third third third third third third third third"
+				"fourth fourth fourth sixth sixth sixth seventh seventh seventh seventh eighth eighth"
+				"fifth fifth fifth sixth sixth sixth seventh seventh seventh seventh eighth eighth"
+				"ninth ninth ninth tenth tenth tenth tenth tenth tenth tenth eighth eighth";
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.education {
+		&__block {
+			flex: 1 1 100%;
+		}
+	}
+
+	.experience {
+		&__img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	.sidebar {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 24px;
+
+		&__photo {
+			width: 100px;
+		}
+
+		&__header {
+			width: 100%;
+			// display: flex;
+		}
+
+		& > .divider {
+			display: none;
+		}
+	}
+
+	.list {
+		margin-top: 5px;
+		justify-content: center;
+
+		&__item {
+			margin-top: 5px;
+
+			flex-basis: 100%;
+
+		}
+	}
+
+	.block {
+		&__header {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__right {
+			margin-top: 10px;
+		}
+
+	}
+
+	.skills {
+		&__grid {
+			display: grid;
+			flex-wrap: wrap;
+			// grid-template-areas: none;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(5, auto);
+			grid-template-areas:
+				"first first"
+				"second second"
+				"sixth eighth"
+				"fifth eighth"
+				"ninth eighth"
+				"third third"
+				"fourth fourth"
+				"seventh seventh"
+				"tenth tenth"
+
+			;
+		}
+
+		&__design {
+			display: flex;
+			flex-direction: column;
+
+			& > .divider {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.list {
+	font-family: 'DM Sans';
+	list-style: none;
+
+	&__title {
+		margin: 0;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		color: #ACB1C3;
+	}
+
+	&__item {
+		align-items: center;
+		margin-top: 12px;
+	}
+
+	&__text {
+		margin-left: 8px;
+	}
+
+	&__img {
+		width: 30px;
+		height: 30px;
+		// background: white;
+		border: none;
+		border-radius: 50%;
+		fill: #E2E6EE;
+
+	}
+
+	&__name {
+		margin: 0;
+		color: #ACB1C3;
+		text-align: left;
+	}
+
+	&__descr {
+		color: #D9DFE8;
+		text-align: left;
+	}
+
+	&__progress {
+		margin-top: 6px;
+		background-color: #2E2E48;
+		border-radius: 10px;
+		height: 15px;
+
+		&_filled {
+			border-radius: 10px;
+			background-image: linear-gradient(90deg, #5531a7 50%, #2E2E48 50%);
+		}
+	}
+}

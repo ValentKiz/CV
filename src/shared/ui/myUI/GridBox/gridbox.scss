@@ -1,0 +1,45 @@
+.grid {
+	display: grid;
+	// overflow: hidden;
+	grid-auto-rows: auto;
+
+	&-item1 {
+		grid-area: first;
+	}
+
+	&-item2 {
+		grid-area: second;
+	}
+
+	&-item3 {
+		grid-area: third;
+	}
+
+	&-item4 {
+		grid-area: fourth;
+	}
+
+	&-item5 {
+		grid-area: fifth;
+	}
+
+	&-item6 {
+		grid-area: sixth;
+	}
+
+	&-item7 {
+		grid-area: seventh;
+	}
+
+	&-item8 {
+		grid-area: eighth;
+	}
+
+	&-item9 {
+		grid-area: ninth;
+	}
+
+	&-item10 {
+		grid-area: tenth;
+	}
+}

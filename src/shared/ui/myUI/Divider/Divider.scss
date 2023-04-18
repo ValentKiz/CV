@@ -1,0 +1,65 @@
+.divider {
+	margin: 16px auto;
+	min-height: 1px;
+	background: #2E2E48;
+
+	&_size_1 {
+		min-height: 1px;
+		width: 1px;
+	}
+
+	&_size_2 {
+		min-height: 2px;
+		width: 2px;
+	}
+
+	&_size_3 {
+		min-height: 3px;
+		width: 3px;
+	}
+
+	&_vertical {
+		margin: 0;
+		min-height: 100%;
+		min-width: 1px;
+
+		// &_size_1 {
+		// 	width: 1px;
+		// }
+
+		// &_size_2 {
+		// 	width: 2px;
+		// }
+
+		// &_size_3 {
+		// 	width: 3px;
+		// }
+
+		// transform: rotate(90deg)
+	}
+
+	&_with-round {
+		&::before {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background: #C696FC;
+			transform: translateX(-50%);
+			border: solid 6px #2E2E48;
+			border-radius: 50%;
+		}
+	}
+
+	.size_1 {
+		width: 1px;
+	}
+
+	.size_2 {
+		width: 2px;
+	}
+
+	.size_3 {
+		width: 3px;
+	}
+}

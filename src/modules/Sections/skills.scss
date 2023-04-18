@@ -1,0 +1,76 @@
+.skills {
+	&__grid {
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		margin-top: 16px;
+		gap: 4px;
+		border-radius: 10px;
+		overflow: hidden;
+		grid-template-areas:
+			"first first first second second second third third third third third third"
+			"first first first second second second third third third third third third"
+			"fourth fourth fourth sixth sixth sixth seventh seventh seventh seventh eighth eighth"
+			"fifth fifth fifth sixth sixth sixth seventh seventh seventh seventh eighth eighth"
+			"ninth ninth ninth tenth tenth tenth tenth tenth tenth tenth eighth eighth"
+			"ninth ninth ninth tenth tenth tenth tenth tenth tenth tenth eighth eighth";
+	}
+
+	&__block {
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 12px;
+		background: #2E2E48;
+		font-family: 'DM Sans';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		color: #95AAFB;
+		text-align: center;
+	}
+
+	&__list {
+		list-style: disc inside;
+		height: 100%;
+		justify-content: space-around;
+	}
+
+	&__wrapper {
+		flex: 1;
+		display: flex;
+		justify-content: space-around;
+		list-style-type: none;
+
+		&.column {
+			flex-direction: column;
+		}
+
+		.divider {
+			background: #94a8fa;
+
+			&:not(.vertical) {
+				margin: 5px 0;
+			}
+		}
+
+		p {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__react {
+		font-size: 24px;
+		color: #00D8FF;
+		width: 100%;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 36px;
+		height: 36px;
+	}
+}

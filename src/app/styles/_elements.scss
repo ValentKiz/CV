@@ -1,0 +1,38 @@
+.arrow {
+	display: block;
+	border: none;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	border-color: #E2E6EE;
+	background-color: transparent;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	transition: transform 500ms;
+	text-align: center;
+	// width: 100%;
+	margin: 0 auto;
+
+
+	&_bottom {
+		transform: translate(0%, -30%) rotate(-135deg);
+		transition-delay: 400ms;
+	}
+
+	&_up {
+		transform: translate(0%, 30%) rotate(45deg);
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.line-through {
+	opacity: 0.6;
+	text-decoration: line-through;
+}
+
+.strong {
+	color: #ffcd25;
+}
